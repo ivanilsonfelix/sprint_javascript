@@ -33,38 +33,39 @@
         <input type="button" name="" id="" value="03" onclick="mudaCorParagrafo()">
 
         <!-- botão 04 - altera a cor do background da div -->
-        <input type="button" name="" id="" value="04">
+        <input type="button" name="" id="" value="04"
+        onclick="mudaCorBackground()">
 
         <!-- botão 05 - mudar a font dos parágrafor para itálico -->
-        <input type="button" name="" id="" value="05">
+        <input type="button" name="" id="" value="05" onclick="mudaFontItalic()">
 
-        <!-- botão 06 -  -->
-        <input type="button" name="" id="" value="06">
+        <!-- botão 06 - mudar a fonte dos paragrafos para negrito  -->
+        <input type="button" name="" id="" value="06" onclick="mudaFontNegrito()">
 
         <!-- botãO 07 - incluir uma borda preta em volta da div-->
-        <input type="button" name="" id="" value="07">
+        <input type="button" name="" id="" value="07" onclick="colocaBorda()">
 
-        <!-- botão 08 -  -->
-        <input type="button" name="" id="" value="08">
-        <!-- botão 09 - -->
+        <!-- botão 08 - remover a borda preta em volta da div -->
+        <input type="button" name="" id="" value="08" onclick="retirarBorda()">
+        <!-- botão 09 - esconder a div e parecer invisivel -->
         <input type="button" name="" id="" value="09">
-        <!-- botão 10 -->
+        <!-- botão 10 - faz a div aparecer novamente-->
         <input type="button" name="" id="" value="10">
-        <!-- botão 11 -->
+        <!-- botão 11 - alterar o texto do h2 para não mexer nesse botão -->
         <input type="button" name="" id="" value="11">
-        <!-- botão 12 -->
+        <!-- botão 12 - mudar a cor do background apenas do paragrafo da classe paragrafo -->
         <input type="button" name="" id="" value="12">
-        <!-- botão 13 -->
+        <!-- botão 13 - mudar a cor apenas de um botão pelo nome da tag input-->
         <input type="button" name="" id="" value="13">
-        <!-- botão 14 -->
+        <!-- botão 14 - muda a cor de todos os botôes pelo nome da tag e uma logica de array-->
         <input type="button" name="" id="" value="14">
-        <!-- botão 15 -->
+        <!-- botão 15 - conta quantos botões aparecem na pagina-->
         <input type="button" name="" id="" value="15">
-        <!-- botão 16 -->
+        <!-- botão 16 - substitui o segundo paragrafo por ***-->
         <input type="button" name="" id="" value="16">
-        <!-- botão 17 -->
+        <!-- botão 17- troca a cor do background da pagina -->
         <input type="button" name="" id="" value="17">
-        <!-- botão 18 -->
+        <!-- botão 18 - e o que acontece com o aluno do SENAI-Ford-->
         <input type="button" name="" id="" value="18">
 
     </div>
@@ -79,6 +80,23 @@
         function mudaCorParagrafo(){
             document.getElementById("manipula").style.color = "blue"
         }
+        
+        function mudaCorBackground(){
+            document.getElementById("manipula").style.backgroundColor = "yellow"
+        } 
+        function mudaFontItalic(){
+            document.getElementById("manipula").style.fontStyle = "italic"
+        } 
+        function mudaFontNegrito(){
+            document.getElementById("manipula").style.fontWeight = "bold"
+        }
+        function colocaBorda(){
+            document.getElementById("manipula").style.border = "2px solid blue"
+        }
+        function retirarBorda(){
+            document.getElementById("manipula").style.border = "none"
+        } 
+ 
     </script>
     
 </body>
