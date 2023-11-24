@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>JavaScript</title>
+    <title>Sprint Java Script</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div id="manipula">
@@ -78,7 +77,7 @@
             <input type="button" name="" id="" value="botão 13" onclick="changeColorInput()">
 
             <!-- botão 14 - muda a cor de todos os botões pelo nome da tag e uma lógica de array -->
-            <input type="button" name="" id="" value="botão 14" onclick="changeAllColorButtons()">
+            <input type="button" name="" id="" value="botão 14" onclick="mudarCorTodosInput()">
 
             <!-- botão 15 - conta quantos botões existem na página -->
             <input type="button" name="" id="" value="botão 15" onclick="buttonsLength()">
@@ -97,7 +96,7 @@
         <br>
         <br>
 
-        <img src="./pc xuxa.jfif" id="image" alt="laptop da xuxa">
+        <img src="./pc-da-xuxa1.jpg" id="image" alt="Pc da xuxa">
         <script>
             //aqui começa a brincadeira com Js
 
@@ -166,27 +165,29 @@
             }
 
             //botão 14 - muda a cor de todos os botões pelo nome da tag e uma lógica de array
-            function changeAllColorButtons() {
-
-                const botao = document.getElementsByTagName('input')
-
-                for (let indice = 0; indice < botao.length; indice++) {
-
-                    botao[indice].style.backgroundColor = "red"         
-
-                }           
-
+            function mudarCorTodosInput() {
+                let botoes = document.getElementsByTagName("input");
+                
+                for (let i = 0; i < botoes.length; i++) {
+                    botoes[i].style.backgroundColor = "purple"; 
+                    botoes[i].style.color = "white";
+                    botoes[i].style.border = '1px solid blue'
+                    botoes[i].style.borderRadius = "5px" 
+                }
             }
 
             //botão 15 - conta quantos botões existem na página
             function buttonsLength() {
-                let numInputs = document.getElementsByTagName("input")
+                let numInputs = document.getElementsByTagName("input") 
 
                 document.getElementById("manipula").innerHTML = numInputs.length
             }
 
             //botão 16 - substitui o segundo parágrafo por ***
             function replace() {
+
+                
+                
                 document.getElementsByClassName("paragrafo")[0].innerHTML = "*****"
             }
 
@@ -198,8 +199,7 @@
             //botão 18 - é o que acontece com o aluno SENAI-Ford
             function alunoSenai() {
                 let img = document.getElementById("image")
-                
-                img.setAttribute('src', 'alienware.jfif')
+                img.setAttribute('src', 'aliware.jpg')
             }
 
             //aqui termina a brincadeira com Js
